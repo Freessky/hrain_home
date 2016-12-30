@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./fontello/css/fontello.css">
+    <link rel="stylesheet" href="./css/royalslider.css"/>
+    <link rel="stylesheet" href="./css/skin-white.css"/>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.event.drag.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+    <script type="text/javascript" src="js/jquery.royalslider.min.js"></script>
+    <script src="js/style.js"></script>
+</head>
+<body>
+<!-- 遮盖层 start -->
+<div class="mfp-bg mfp-img-mobile mfp-ready" style="display: none;"></div>
+<div class="mfp-wrap mfp-gallery mfp-close-btn-in mfp-img-mobile mfp-ready" tabindex="-1" style="overflow-x: hidden; overflow-y: auto; display: none;">
+    <div class="mfp-container mfp-image-holder mfp-s-ready">
+        <div class="mfp-content">
+            <div class="mfp-figure">
+                <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                <figure>
+                    <img class="mfp-img" src="images/map_big.jpg" style="max-height: 979px;">
+                    <figcaption>
+                        <div class="mfp-bottom-bar">
+                            <div class="mfp-title">信为公司位置地图</div>
+                            <div class="mfp-counter"></div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="mfp-preloader">Loading image #1 ...</div>
+    </div>
+</div>
+<!-- 遮盖层 end -->
+
+<div class="main_content">
+    <!-- start header -->
+    <div class="main_topnav" id="main_topnav">
+        <header class="main">
+            <div class="main_top" id="main_top">
+                <div class="main_top_right clearfix" id="MT_nav">
+                    <ul>
+                        <li class="test_triangle_border">
+                            <a href="#" class="icon-globe">Language</a>
+                            <div class="popup">
+                                <span><em></em></span>
+                                <a href="#">中文</a>
+                                <a href="#">英文</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_top_left">
+                    信为 - 企业管理软件开发与实施服务提供商
+                </div>
+            </div>
+            <div class="main_bottom" id="main_bottom">
+                <figure class="logo">
+                    <a href="index.html">
+                        <img src="./images/logo.png" class="logo_main">
+                    </a>
+                </figure>
+                <form>
+                    <div class="search-wrapper" id="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Seaarch ..." />
+                            <button class="search-icon" onClick="searchToggle(this, event);"><span></span></button>
+                        </div>
+                        <span class="close" onClick="searchToggle(this, event);" style="display: none;"></span>
+                        <div class="result-container">
+
+                        </div>
+                    </div>
+                </form>
+                <nav class="topMenuStyleLine" id="topMenuStyleLine">
+                    <ul class="nav" id="topnav">
+                        <li class="nav-item"><a href="#" class="nav-item-link">首页</a></li>
+                        <li class="nav-item"><a href="solution.html#page1">产品和服务</a>
+                            <div class="nav-item-sub sl-shadow">
+                                <table class="nav-item-table">
+                                    <thead>
+                                        <tr>
+                                            <th>开发</th>
+                                            <th>咨询</th>
+                                            <th>产品</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-user"></span>
+                                                    客户关系管理系统
+                                                 </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-chart-line"></span>
+                                                    IT咨询
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-cube"></span>
+                                                    金蝶财务软件
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-chart-pie"></span>
+                                                    企业资源计划管理
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-medkit"></span>
+                                                    IT治理
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-cube"></span>
+                                                    金蝶KIS系列软件
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-sitemap"></span>
+                                                    人力资源管理系统
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-retweet"></span>
+                                                    流程优化
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-codeopen"></span>
+                                                    速达财务软件
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-chart-bar"></span>
+                                                    财务管理系统
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-floppy"></span>
+                                                    软件实施咨询
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-codeopen"></span>
+                                                    速达进销存软件
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-edit"></span>
+                                                    协同办公系统
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-cubes"></span>
+                                                    软件外包咨询
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-codeopen"></span>
+                                                    速达ERP管理系统
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-database"></span>
+                                                    进销存管理系统
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-vcard"></span>
+                                                    人力外包咨询
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-list-alt"></span>
+                                                    浪潮PS管理软件
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="solution.html#page2" class="sale">行业解决方案</a>
+                            <div class="nav-item-sub sl-shadow">
+                                <table class="nav-item-table">
+                                    <thead>
+                                        <tr>
+                                            <th>大型企业</th>
+                                            <th>中小型企业</th>
+                                            <th>公共部门</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-cog-alt"></span>
+                                                    采掘制造
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-wrench"></span>
+                                                    生产
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-bank"></span>
+                                                    政府机关
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-basket"></span>
+                                                    商业
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-basket"></span>
+                                                    商贸零售
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-yen"></span>
+                                                    财政部门
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-building-filled"></span>
+                                                    房产建筑
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-sliders"></span>
+                                                    工程
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-hammer"></span>
+                                                    司法部门
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-flight"></span>
+                                                    物流
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-truck"></span>
+                                                    物流
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-graduation-cap"></span>
+                                                    教育机构
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-food"></span>
+                                                    连锁餐饮
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-food"></span>
+                                                    餐饮娱乐
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-stethoscope"></span>
+                                                    医疗组织
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-lamp"></span>
+                                                    高科技
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-suitcase"></span>
+                                                    传媒
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-award"></span>
+                                                    社会团体
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-coffee"></span>
+                                                    商服服务
+                                                </a>
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-recycle"></span>
+                                                    科技
+                                                </a>
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="solution.html#page3" class="community">支持和培训</a>
+                            <div class="nav-item-sub sl-shadow">
+                                <table class="nav-item-table">
+                                    <thead>
+                                        <tr>
+                                            <th>支持</th>
+                                            <th>培训</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-briefcase"></span>
+                                                    标准技术支持
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-users"></span>
+                                                    客户培训
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-chat"></span>
+                                                    远程技术支持
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-users-1"></span>
+                                                    人力资源派遣
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="nav-item" id="security"><a href="solution.html#page4" class="store">关于信为</a>
+                            <div class="nav-item-sub sl-shadow">
+                                <table class="nav-item-table">
+                                    <thead>
+                                        <tr>
+                                            <th>公司</th>
+                                            <th>资讯</th>
+                                            <th>招聘</th>
+                                            <th>社交</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-droplet"></span>
+                                                    信为概况
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-newspaper"></span>
+                                                    新闻中心
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-user-add"></span>
+                                                    求贤纳士
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-vkontakte"></span>
+                                                    博客：前沿理论
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-doc-text-inv"></span>
+                                                    服务领域
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-megaphone"></span>
+                                                    最新活动
+                                                </a>
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-facebook-squared"></span>
+                                                    社区：专家交流
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-award"></span>
+                                                    服务优势
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-heart"></span>
+                                                    公益事业与社会责任
+                                                </a>
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-doc-text"></span>
+                                                    商业行为准则
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-arrows-ccw"></span>
+                                                    客户与生态伙伴系统
+                                                </a>
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="nav-item" id="business"><a href="#" class="store">联系我们</a>
+                            <div class="nav-item-sub sl-shadow">
+                                <table class="nav-item-table">
+                                    <thead>
+                                        <tr>
+                                            <th>大连</th>
+                                            <th>&nbsp;</th>
+                                            <th>&nbsp;</th>
+                                            <th>沈阳</th>
+                                            <th>&nbsp;</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="images/dalian.jpg" width="287" height="200" alt="" />
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-droplet"></span>
+                                                    大连总公司
+                                                </a>
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                <img src="images/dongjing.jpg" width="287" height="200" alt="" />
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <span class="menu_icon icon-newspaper"></span>
+                                                    沈阳办事处
+                                                </a>
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- end header -->
+
+    <!-- start banner -->
+    <div class="sliderContainer fullWidth clearfix">
+        <div id="full-width-slider" class="royalSlider heroSlider rsMinW">
+            <div class="rsContent slide-3">
+                <div class="main">
+                    <div class="rsABlock textBlock" data-fade-effect="none" data-move-effect="top" data-opposite="true" data-move-offset="950" data-delay="450" data-speed="1000" data-easing="" data-rsw="707" data-rsh="471">
+                        <div class="title">助您创建理想化企业</div>
+                        <p>管理精细 流程优化 效率最高</p>
+                    </div>
+                    <div class="rsABlock order" data-fade-effect="none" data-move-effect="bottom" data-opposite="true" data-move-offset="950" data-delay="950" data-speed="900" data-easing="" data-rsw="707" data-rsh="471">
+                        <a target="_blank" href="#" class="submitOrder">了解更多</a>
+                    </div>
+                    <img alt="" class="rsABlock image" data-fade-effect="none" data-move-effect="left" data-opposite="true" data-move-offset="950" data-delay="350" data-speed="1300" data-easing="" src="./images/slide-3-2.png" data-rsw="707" data-rsh="471">
+                </div>
+            </div>
+            <div class="rsContent slide-2">
+                <div class="main">
+                    <div class="rsABlock textBlock" data-fade-effect="none" data-move-effect="left" data-opposite="true" data-move-offset="900" data-delay="300" data-speed="1200" data-easing="" data-rsw="707" data-rsh="471">
+                        <div class="title">把握现在 成就未来</div>
+                        <p>金蝶、速达、浪潮品牌合作伙伴</p>
+                    </div>
+                    <img alt="" class="rsABlock image" data-fade-effect="none" data-move-effect="bottom" data-opposite="true" data-move-offset="950" data-delay="300" data-speed="1000" data-easing="" src="images/slide-2-2.png" data-rsw="707" data-rsh="471">
+                </div>
+            </div>
+
+            <div class="rsContent slide-1">
+                <div class="main">
+                    <div class="rsABlock textBlock" data-fade-effect="none" data-move-effect="top" data-opposite="true" data-move-offset="900" data-delay="300" data-speed="1500" data-easing="easeOutBack" data-rsw="707" data-rsh="471">
+                        <div class="title">点击瞬间 掌控全局</div>
+                        <p>共同迈进企业全面信息化时代</p>
+                    </div>
+                    <img alt="" class="rsABlock image" data-fade-effect="none" data-move-effect="bottom" data-opposite="true" data-move-offset="950" data-delay="450" data-speed="2500" data-easing="" src="images/slide-1-2.png" data-rsw="707" data-rsh="471">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end banner -->
+
+    <!-- start section -->
+    <div class="userHeaderSection grey">
+        <div class="sc_content main">
+            <ul class="columnWrap">
+                <li>
+                    <a href="solution.html#page1">
+                        <span class="icon-doc"></span>
+                        <p>整体解决方案</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="solution.html#page1">
+                        <span class="icon-beaker"></span>
+                        <p>融合管理咨询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="solution.html#page1">
+                        <span class="icon-cloud"></span>
+                        <p>IT服务支持平台</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="solution.html#page1">
+                        <span class="icon-cog"></span>
+                        <p>客户化定制开发</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="solution.html#page1">
+                        <span class="icon-diamond"></span>
+                        <p>软件选型与实施</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="solution.html#page1">
+                        <span class="icon-heart"></span>
+                        <p>遵循道德准则</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end section -->
+
+    <!-- start mainWrap -->
+    <div class="mainWrap">
+        <div class="main">
+            <section class="post">
+                <h2>服务领域</h2>
+                <div class="sc_blogger">
+                    <ul class="columnsWrap">
+                        <li class="columns1_4">
+                            <div class="thumb hoverIncrease">
+                                <a href="#">
+                                    <img class="post-image" src="./images/service-1.jpg" />
+                                </a>
+                            </div>
+                            <h4>
+                                <a href="#">管理软件开发</a>
+                            </h4>
+                            <p>为您提供专业的企业级应用软件定制开发，让您的管理软件蕴含先进的管理思想和模式，提升管理水平...</p>
+                        </li>
+                        <li class="columns1_4">
+                            <div class="thumb hoverIncrease">
+                                <a href="#">
+                                    <img class="post-image" src="./images/service-3.jpg" />
+                                </a>
+                            </div>
+                            <h4>
+                                <a href="#">IT咨询服务</a>
+                            </h4>
+                            <p>从根据您的业务目标制定IT战略到依据辅助性应用协调业务流程，帮助企业IT商业价值显现、提高IT投资回报率...</p>
+                        </li>
+                        <li class="columns1_4">
+                            <div class="thumb hoverIncrease">
+                                <a href="#">
+                                    <img class="post-image" src="./images/service-2.jpg" />
+                                </a>
+                            </div>
+                            <h4>
+                                <a href="#">软件产品选型</a>
+                            </h4>
+                            <p>帮助您选购适合的软件产品组合，专业灵活的满足企业自身独特的业务需求，优化成本结构，推动收入增长...</p>
+                        </li>
+                        <li class="columns1_4">
+                            <div class="thumb hoverIncrease">
+                                <a href="#">
+                                    <img class="post-image" src="./images/service-3.jpg" />
+                                </a>
+                            </div>
+                            <h4>
+                                <a href="#">软件产品实施</a>
+                            </h4>
+                            <p>负责您公司从软件安装调试、人员操作培训到后期维护一系列软件使用活动中的事项，确保信息化建设成果...</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- start line -->
+                <div class="sc_line sc_line_style_shadow" style="margin-top:20px;margin-bottom:20px;border-top-style:shadow;"></div>
+                <!-- end line -->
+
+
+
+                <!-- start columnsWrap -->
+
+
+
+                <div class="columnsWrap">
+                    <div class="columns1_3">
+                        <div class="sjz">
+                            <h2>时间轴</h2>
+                            <ul class="flex-direction-nav">
+                                <li><a class="icon-up" href="#"></a></li>
+                                <li><a class="icon-down" href="#"></a></li>
+                            </ul>
+                        </div>
+                        <div id="boxscroll2" >
+                            <div id="contentscroll2" class="columns_left sc_column_item">
+                                <div class="sc_blogger sc_blogger_vertical style_date sc_scroll_controls">
+                                    <div class="sc_scroll sc_scroll_vertical">
+                                        <div class="sc_scroll_wrapper swiper-wrapper">
+
+                                            <article class="sc_blogger_item">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">03.05</span>
+                                                    <span class="year">2014</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">与日本日光株式会社合作开展软件外包服务</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views<span>387</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">06.02</span>
+                                                    <span class="year">2013</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为成为金蝶软件集团KIS产品分销商</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>443</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">01.15</span>
+                                                    <span class="year">2012</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为成为壹基金爱心合作伙伴，以免费产品为慈善募捐</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>342</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">12.06</span>
+                                                    <span class="year">2011</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">2011年度中国商用软件行业最佳美誉度企业TOP10</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>236</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">12.06</span>
+                                                    <span class="year">2011</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">2011年度中国商用软件SCM领域TOP5</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>99</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">11.07</span>
+                                                    <span class="year">2010</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为与北大青鸟在软件工厂项目达成合作</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>286</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">10.27</span>
+                                                    <span class="year">2010</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为与安博教育集团大连软件基地达成校企实训合作规划</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>142</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">05.25</span>
+                                                    <span class="year">2010</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为与中欣智府在IT与管理咨询等领域达成战略合作</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>119</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">05.20</span>
+                                                    <span class="year">2010</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为与蓝巢集团在软件研发领域达成战略合作</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>132</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">12.20</span>
+                                                    <span class="year">2008</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为成为新网域名空间合作商</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>89</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">11.01</span>
+                                                    <span class="year">2008</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为成为大连市政府创业孵化基地首批扶持单位</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>93</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item sc_blogger_item_last">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">08.28</span>
+                                                    <span class="year">2008</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为成为大连软件协会互联网分会会员企业</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>15</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">05.25</span>
+                                                    <span class="year">2010</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为与中欣智府在IT与管理咨询等领域达成战略合作</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>119</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item sc_scroll_slide swiper-slide">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">05.20</span>
+                                                    <span class="year">2010</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为与蓝巢集团在软件研发领域达成战略合作</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>132</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item sc_scroll_slide swiper-slide">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">12.20</span>
+                                                    <span class="year">2008</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为成为新网域名空间合作商</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>89</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item sc_scroll_slide swiper-slide">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">11.01</span>
+                                                    <span class="year">2008</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为成为大连市政府创业孵化基地首批扶持单位</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>93</span></div>
+                                            </article>
+
+                                            <article class="sc_blogger_item sc_blogger_item_last">
+                                                <div class="sc_blogger_date">
+                                                    <span class="day_month">08.28</span>
+                                                    <span class="year">2008</span>
+                                                </div>
+                                                <h4 class="sc_blogger_title sc_title">
+                                                    <a href="#">信为成为大连软件协会互联网分会会员企业</a>
+                                                </h4>
+                                                <div class="sc_blogger_info">Views <span>15</span></div>
+                                            </article>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns_right columns2_3">
+                        <h2>客户与伙伴</h2>
+                        <div class="sc_tabs sc_tabs_style_1">
+                            <ul class="sc_tabs_titles">
+                                <li class="ui-tabs-active">
+                                    <a href="#tab1">客户案例</a>
+                                </li>
+                                <li>
+                                    <a href="#tab2">合作伙伴</a>
+                                </li>
+                            </ul>
+                            <div id="tab_con">
+                                <div id="tab1" class="sc_tabs_content" style="display: block;">
+                                    <div  class="sc_scroll sc_scroll_vertical" style="height: 230px;">
+                                        <div id="boxscroll3">
+                                            <div id="contentscroll3" class="sc_blogger sc_blogger_vertical style_image style_image_tiny">
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img src="images/case-1.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">天津海事局大连航标处</a>
+                                                    </h4>
+                                                    <div>› 海事局航标处综合办公管理系统</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img src="images/case-2.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">阿斯顿教育集团</a>
+                                                    </h4>
+                                                    <div>› e-Learning 在线学习平台</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img src="images/case-3.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">大连房先生不动产管理有限公司</a>
+                                                    </h4>
+                                                    <div>› 房产中介连锁管理系统</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img src="images/case-4.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">天津安泰保险公估有限公司</a>
+                                                    </h4>
+                                                    <div>› 保险公估综合业务管理软件</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img alt="" src="images/case-5.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">致远（大连）家具系统有限公司</a>
+                                                    </h4>
+                                                    <div>› 企业网站与网上商城系统</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img alt="" src="images/case-6.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">大连长海林阳水产有限公司</a>
+                                                    </h4>
+                                                    <div>› 生产、进销存及财务管理ERP系统</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img alt="" src="images/case-7.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">佐治管理咨询（大连）有限公司</a>
+                                                    </h4>
+                                                    <div class="sc_blogger_content">› 客户关系管理CRM系统</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img alt="" src="images/case-8.png"></div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">北京中欣智府教育咨询有限公司</a>
+                                                    </h4>
+                                                    <div>› 餐饮业内部管理系统</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item sc_blogger_item_last">
+                                                    <div class="thumb">
+                                                        <a href="#">
+                                                            <img alt="" src="images/case-9.png">
+                                                        </a>
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">更多</a>
+                                                    </h4>
+                                                    <div>...		</div>
+                                                </article>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="sc_tabs_content">
+                                    <div  class="sc_scroll sc_scroll_vertical" style="height: 230px;">
+                                        <div id="boxscroll4" class="tabs-content-placeholder">
+                                            <div id="contentscroll4" class="sc_blogger sc_blogger_vertical style_image style_image_tiny tab-content-active">
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img class="wp-post-image" alt="" src="images/partner-1.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">日本日光株式会社</a>
+                                                    </h4>
+                                                    <div>› 软件开发合作</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img alt="" src="images/partner-2.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">壹基金</a>
+                                                    </h4>
+                                                    <div>› “1+1”慈善共行活动</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img src="images/partner-3.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">金蝶国际软件集团</a>
+                                                    </h4>
+                                                    <div>› 代理分销合作伙伴</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img alt="" src="images/partner-4.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">速达软件技术有限公司</a>
+                                                    </h4>
+                                                    <div>› 代理分销合作伙伴</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img alt="" src="images/partner-5.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">浪潮软件股份有限公司</a>
+                                                    </h4>
+                                                    <div>› 代理分销合作伙伴</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img alt="" src="images/partner-6.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">新网数码信息技术有限公司</a>
+                                                    </h4>
+                                                    <div>› 代理分销合作伙伴</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item">
+                                                    <div class="thumb">
+                                                        <img alt="" src="images/partner-7.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href="#">安博教育集团</a>
+                                                    </h4>
+                                                    <div>› 校企实训合作计划</div>
+                                                </article>
+
+                                                <article class="sc_blogger_item sc_blogger_item_last">
+                                                    <div class="thumb">
+                                                        <img alt="" src="images/partner-8.png">
+                                                    </div>
+                                                    <h4 class="sc_blogger_title sc_title">
+                                                        <a href=#">GMOデジロック株式会社</a>
+                                                    </h4>
+                                                    <div>› 网络空间支持商</div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns1_2" style="margin-right: 0px !important;">
+                            <h2>相关网站</h2>
+                            <div class="sc_accordion sc_accordion_style_1 sc_shadow">
+
+                                <div class="sc_accordion_item sc_active">
+                                    <h4 class="sc_accordion_title">
+                                        <span class="ui-icon"></span>
+                                        信为商城丨store.sinowell.net
+                                    </h4>
+                                    <div class="sc_accordion_content" style="display: block;"> 信为商城是大连信为软件开发有限公司的官方线上销售平台，提供信为软件自主研发产品和代理的金蝶、速达、浪潮品牌的企业管理软件及周边产品。在线购买价格优惠，正版保障。 </div>
+                                </div>
+
+                                <div class="sc_accordion_item">
+                                    <h4 class="sc_accordion_title">
+                                        <span class="ui-icon"></span>
+                                        云谊网丨club.sinowell.net
+                                    </h4>
+                                    <div class="sc_accordion_content" style="display: none;"> 云谊网是大连信为软件开发有限公司旗下的为已赴日和准备赴日的IT人才提供交流的社区论坛，在这里您可以分享经验、拓展人脉、发现机遇、推荐职位。我们相信合适的工作可以改变一个人的生活，并且合适的人才可以改变一个企业，我们热衷于为人才提供得到合适工作的机会。 </div>
+                                </div>
+
+                                <div class="sc_accordion_item">
+                                    <h4 class="sc_accordion_title">
+                                        <span class="ui-icon"></span>
+                                        云为人力丨hro.sinowell.net
+                                    </h4>
+                                    <div class="sc_accordion_content" style="display: none;"> 云为人力是大连信为软件开发有限公司旗下的人力资源外包事业品牌，是中国专业的人力资源外包领域的服务商。云为长期招募与推荐高薪赴日软件工程师、数据库工程师、手机应用工程师和网络工程师，客户涵盖了日本上市公司和&#8203;&#8203;知名株式会社。 </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end columnsWrap -->
+            </section>
+        </div>
+    </div>
+    <!-- end mainWrap -->
+
+    <!-- start footer -->
+    <div class="footerContentWrap">
+        <footer class="footerWrap footerStyleDark">
+            <div class="main footerWidget widget_area">
+                <div class="columnsWrap">
+                    <aside id="themerex-advert-widget-3" class="columns1_5 widgetWrap widget-number-1 widget widget_advert">
+                        <div class="widget_advert_inner">
+                            <figure class="sc_image  sc_image_shape_square" style="width:190px;">
+                                <img src="images/logo_footer_s.png">
+                            </figure>
+                            <br>
+                            <div class="thumb hoverIncrease" data-image="/images/map_big.jpg">
+                                <img class="wp-post-image" src="images/map.jpg">
+                                <span class="hoverShadow"></span>
+                                <a href="javascript:void(0);" class="inited">
+                                    <span class="hoverIcon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <aside class="columns1_5 widgetWrap widget-number-2 widget widget_calendar">
+                        <h3 class="title">软件服务</h3>
+                        <div id="calendar_wrap">
+                            <span><a href="#" class="style2">客户关系管理&nbsp;CRM</a></span><br>
+                            <span><a href="#" class="style2">企业资源计划&nbsp;ERP</a></span><br>
+                            <span><a href="#" class="style2">人力资源管理&nbsp;HCM</a></span><br>
+                            <span><a href="#" class="style2">财务管理&nbsp;FMS</a></span><br>
+                            <span><a href="#" class="style2">协同办公&nbsp;OA</a></span><br>
+                            <span><a href="#" class="style2">进销存管理&nbsp;SCM</a></span>
+                        </div>
+                    </aside>
+
+                    <aside class="columns1_5 widgetWrap widget-number-4 widget widget_calendar">
+                        <h3 class="title">咨询服务</h3>
+                        <div class="calendar_wrap">
+                            <span><a href="#" class="style2">IT咨询</a></span><br>
+                            <span><a href="#" class="style2">IT治理</a></span><br>
+                            <span><a href="#" class="style2">流程优化</a></span><br>
+                            <span><a href="#" class="style2">软件实施咨询</a></span><br>
+                            <span><a href="#" class="style2">软件外包咨询</a></span><br>
+                            <span><a href="#" class="style2">人力外包咨询</a></span>
+                        </div>
+                    </aside>
+
+                    <aside class="columns1_5 widgetWrap widget-number-5 widget widget_calendar">
+                        <h3 class="title">软件产品</h3>
+                        <div class="calendar_wrap">
+                            <span><a href="#" class="style2">金蝶财务软件</a></span><br>
+                            <span><a href="#" class="style2">金蝶KIS系列软件</a></span><br>
+                            <span><a href="#" class="style2">速达财务软件</a></span><br>
+                            <span><a href="#" class="style2">速达进销存软件</a></span><br>
+                            <span><a href="#" class="style2">速达ERP管理系统</a></span><br>
+                            <span><a href="#" class="style2">浪潮PS管理软件</a></span>
+                        </div>
+                    </aside>
+
+                    <aside class="columns1_5 widgetWrap widget-number-6 widget widget_calendar">
+                        <h3 class="title">其它链接</h3>
+                        <div class="calendar_wrap">
+                            <span><a href="#" class="style2">文库</a></span><br>
+                            <span><a href="#" class="style2">云计划</a></span><br>
+                            <span><a href="#" class="style2">云谊网</a></span><br>
+                            <span><a href="#" class="style2">代理产品</a></span><br>
+                            <span><a href="#" class="style2">道德准则</a></span><br>
+                            <span><a href="#" class="style2">法律公告</a></span><br>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </footer>
+        <div class="copyWrap">
+            <div class="copy main">
+                <div class="copyright">
+                    <span class="menu_icon icon-shield"></span>
+                    辽ICP备15003906号 版权所有©2008-2016 大连信为软件开发有限公司
+                </div>
+                <div class="copy_socials socPage">
+                    <ul>
+                        <li>
+                            <a class="social_icons" style="background-image: url(images/qqt.png);" target="_blank" href="#">
+                                <span style="background-image: url(images/qqt.png);"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social_icons" style="background-image: url(images/sina.png);" target="_blank" href="#t">
+                                <span style="background-image: url(images/sina.png);"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social_icons" style="background-image: url(images/twitter.png);" target="_blank" href="#">
+                                <span style="background-image: url(images/twitter.png);"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social_icons" style="background-image: url(images/rss.png);" target="_blank" href="#">
+                                <span style="background-image: url(images/rss.png);"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social_icons" style="background-image: url(images/weixin.png);" target="_blank" href="#">
+                                <span style="background-image: url(images/weixin.png);"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+
+</div>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('#full-width-slider').royalSlider({
+            template:'default',
+            image_generation:{
+                imageWidth:'',
+                imageHeight:'',
+                thumbImageWidth:'',
+                thumbImageHeight:''
+            },
+            thumbs:{
+                thumbWidth:96,
+                thumbHeight:72
+            },
+            autoPlay:{
+                enabled:!0,
+                delay:7000,
+                stopAtAction:!1
+            },
+            block:{
+                moveOffset:20,
+                speed:400,
+                delay:200
+            },
+            width:'100%',
+            height:'500px',
+            autoScaleSlider:!0,
+            autoScaleSliderWidth:'',
+            autoScaleSliderHeight:'',
+            slidesSpacing:0,
+            imageScaleMode:'fill',
+            imageScalePadding:0,
+            arrowsNav:!1,
+            startSlideId:0,
+            loop:!0
+        });
+    });
+</script>
+</body>
+</html>

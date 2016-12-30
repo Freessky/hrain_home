@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>solution</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./fontello/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="./Font/css/font-awesome.css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.event.drag.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+    <script src="js/style.js"></script>
+</head>
+<style type="text/css">
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    div.up {
+        height:auto!important;
+        overflow:visible!important;
+    }
+    div.tab_list {
+        height:0;
+        overflow:hidden;
+    }
+    .tab_nav a {
+        color: #000;
+    }
+</style>
+
+<body class="skin-blue">
+<!-- header start -->
+<header class="header">
+    <a href="index.html" class="s_logo">SINOWELL</a>
+    <nav class="navbar navbar-static-top">
+        <a href="#" class="navbar-btn sidebar-toggle">
+            <span class="sr-only">导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle" title="在线客服">
+                        <i class="fa fa-user"></i>
+                    </a>
+                </li>
+                <li class="dropdown messages-menu">
+                    <a href="#" class="dropdown-toggle" title="发送邮件">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="dropdown tasks-menu">
+                    <a href="#" class="dropdown-toggle" title="让我们联系您">
+                        <i class="fa fa-tasks"></i>
+                    </a>
+                </li>
+                <li class="dropdown notifications-menu">
+                    <a href="#" class="dropdown-toggle" title="联系我们">
+                        <i class="fa fa-phone"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- header end -->
+<!-- nav start -->
+<div class="tab1" id="tab1">
+    <div style="clear: both;"></div>
+    <div class="menu">
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Search..."/>
+                <span class="input-group-btn">
+                    <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+        <!-- /.search form -->
+        <ul>
+            <li class="tab_nav"><a href="#page1" name="page1"><i class="fa fa-star-half-o"></i> <span>产品和服务</span></a></li>
+            <li class="tab_nav"><a href="#page2" name="page2"><i class="fa fa-list-ul"></i> <span>行业解决方案</span></a></li>
+            <li class="tab_nav"><a href="#page3" name="page3"><i class="fa fa-headphones"></i> <span>支持和培训</span></a></li>
+            <li class="tab_nav"><a href="#page4" name="page4"><i class="fa fa-archive"></i> <span>关于信为</span></a></li>
+        </ul>
+    </div>
+    <div class="menudiv">
+        <div id="page1" class="tab_list">
+            <div class="gongnengcon">
+                <section class="content-header">
+                    <h1>产品和服务</h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-home"></i>&nbsp;首页</a></li>
+                        <li class="active">产品和服务</li>
+                    </ol>
+                </section>
+                <section class="content">
+                    <h4 class="page-header">
+                        <small>我们经验丰富的团队能够为您提供高质量的专业服务，而一切价值都是由专业服务创造的，现在让我们一起来解决您的烦恼</small>
+                    </h4>
+                    <div class="box">
+                        <div class="box-body">
+                            <br/>
+                            <p>软件服务：为您提供专业的企业级应用软件定制开发，让您的管理软件蕴含先进的管理思想和模式，提升管理水平</p>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-user"></i> 客户关系管理
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-cogs"></i> 生产制造管理
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-sitemap"></i> 人力资源管理
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-money"></i> 财务管理
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-calendar"></i> 协同办公
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-truck"></i> 进销存管理
+                            </a>
+                            <br />
+                            <br />
+                            <p>咨询服务：从根据您的业务目标制定IT战略到依据辅助性应用程序协调您的业务流程，助您的企业IT商业价值显现、提高IT投资回报率</p>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-file-text-o"></i> IT咨询
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-lightbulb-o"></i> IT治理
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-random"></i> 流程优化
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-save"></i> 软件实施咨询
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-github"></i> 软件外包咨询
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-male"></i> 人力外包咨询
+                            </a>
+                            <br />
+                            <br />
+                            <p>软件产品：帮助客户选购和实施适合的产品组合，通过专业产品灵活地满足客户自身独特的业务需求，侧重于优化成本结构，有助于推动收入增长</p>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-users"></i> 金蝶财务软件
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-plane"></i> 金蝶KIS系列软件
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-puzzle-piece"></i> 速达财务软件
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-th"></i> 速达进销存软件
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-road"></i> 速达ERP管理系统
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-flag"></i> 浪潮PS管理软件
+                            </a>
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                    <div class="panel box box-primary">
+                        <div class="box-header-copyright">
+                            <h4 class="box-title-copyright">
+                                <p class="collapsed">
+                                    辽ICP备15003906号 版权所有©2008-2016 大连信为软件开发有限公司
+                                </p>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div id="page2" class="tab_list">
+            <div class="gongnengcon">
+                <section class="content-header">
+                    <h1>行业解决方案</h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-home"></i>&nbsp;首页</a></li>
+                        <li class="active">行业解决方案</li>
+                    </ol>
+                </section>
+                <section class="content">
+                    <h4 class="page-header">
+                        <small>为您提供专业的行业最佳实践解决方案，包括从IT咨询服务到企业管理软件的开发与实施方案，现在让我们一起来解决您的烦恼</small>
+                    </h4>
+                    <div class="box">
+                        <div class="box-body"><br />
+                            <p>大型企业：帮助企业用户总揽各地域分公司机构，助力您轻松共享内外信息及商务洞察、保持沟通及业务运转畅顺、全局把握公司流程及供应链管理，让您的市场营销、资产管理、财务运营及业务运作从此高枕无忧</p>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-anchor"></i> 采掘制造
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-shopping-cart"></i> 商业
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-building-o"></i> 房产建筑
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-plane"></i> 物流
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-cutlery"></i> 连锁餐饮
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-inbox"></i> 高科技
+                            </a>
+                            <br />
+                            <br />
+                            <p>中小型企业：帮助您把握客户，提升效率，降低成本，快速响应日新月异的市场，及时做出明智决策，遥遥领先竞争对手，实现盈利增长与企业的快速成长</p>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-umbrella"></i> 生产
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-shopping-cart"></i> 商贸零售
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-picture-o"></i> 工程
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-truck"></i> 物流
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-coffee"></i> 餐饮娱乐
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-video-camera"></i> 传媒
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-suitcase"></i> 商务服务
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-crosshairs"></i> 科技
+                            </a>
+                            <br />
+                            <br />
+                            <p>公共部门：围绕着提高政务办公效率和质量，以及全面适应电子政务的需要，信为软件为政府事业单位的内容管理、业务流程自动化提供完善而合理的解决方案，为流程再造提供坚实的基础平台</p>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-star"></i> 政府机关
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-bar-chart-o"></i> 财政部门
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-gavel"></i> 司法部门
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-indent"></i> 教育机构
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-stethoscope"></i> 医疗组织
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-users"></i> 社会团体
+                            </a>
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                    <div class="panel box box-primary">
+                        <div class="box-header-copyright">
+                            <h4 class="box-title-copyright">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
+                                    辽ICP备15003906号 版权所有©2008-2016 大连信为软件开发有限公司
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div id="page3" class="tab_list">
+            <div class="gongnengcon">
+                <section class="content-header">
+                    <h1>支持和培训</h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-home"></i>首页</a></li>
+                        <li class="active">支持和培训</li>
+                    </ol>
+                </section>
+                <section class="content">
+                    <h4 class="page-header">
+                        <small>信为为您提供专业的技术支持与培训，让您用的贴心，用的方便，使信为产品发挥最大价值，现在让我们一起来解决您的烦恼</small>
+                    </h4>
+                    <div class="box">
+                        <div class="box-body"><br />
+                            <p>技术支持：信为拥有完备的支持网络，为用户提供丰富全面的产品与服务支持。现场实施安装上线，售后升级、维护、故障排查，产品使用的培训和指导</p>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-user"></i> 标准技术支持
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-laptop"></i> 远程技术支持
+                            </a>
+                            <br />
+                            <br />
+                            <p>客户培训：帮助用户与合作伙伴提高知识和能力，从而挖掘信息化的最大价值。我们的培训能让您从较低的总体拥有成本中获益，并能在整个软件生命周期中不断获得最优的投资回报</p>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-files-o"></i> 客户知识培训
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-users"></i> 相关人才派遣
+                            </a>
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                    <div class="panel box box-primary">
+                        <div class="box-header-copyright">
+                            <h4 class="box-title-copyright">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
+                                    辽ICP备15003906号 版权所有©2008-2016 大连信为软件开发有限公司
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div id="page4" class="tab_list">
+            <div class="gongnengcon">
+                <section class="content-header">
+                    <h1>关于信为</h1>
+                    <ol class="breadcrumb">
+                        <li><a href="/index.html"><i class="fa fa-home"></i>首页</a></li>
+                        <li class="active">关于信为</li>
+                    </ol>
+                </section>
+                <section class="content">
+                    <h4 class="page-header">
+                        <small>中国领先的企业级IT应用与人力资源外包服务提供商，著名管理咨询机构推荐品牌，核心价值观是专业知识、创新思维、贴心服务、诚信为本</small>
+                    </h4>
+                    <div class="box">
+                        <div class="box-body"><br />
+                            <p>公司：信为是以管理软件开发、行业解决方案和IT咨询为主营业务的信息技术企业，中国领先的企业IT应用与人力资源外包服务提供商。我们的目标是助您构建理想企业</p>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-tint"></i> 信为概况
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-arrows"></i> 服务领域
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-trophy"></i> 服务优势
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-heart"></i> 道德准则
+                            </a>
+                            <br />
+                            <br />
+                            <p>资讯：在企业信息化建设领域内，向客户提供从分析到规划到实施的整体IT战略支持和伴随着客户企业成长的从现在到远期的全生命周期服务</p>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-film"></i> 新闻中心
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-bullhorn"></i> 最新活动
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-leaf"></i> 公益责任
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-group"></i> 客户伙伴
+                            </a>
+                            <br />
+                            <br />
+                            <p>招聘：提供延续企业成长的愿景、使命及价值观和文化；与极具风格和魅力的领导团队及精英人才共同创造历史的机遇；关注员工的学习和发展，完善的内部晋升体系，广阔的职业发展空间；行业内具有竞争力的薪酬福利体系</p>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-female"></i> 求贤纳士
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-circle-o"></i> 外派职位
+                            </a>
+                            <br />
+                            <br />
+                            <p>社交：拥有专业的管理咨询顾问和资深IT专家组成的服务团队，并与业内相关公司紧密合作共同为客户提供IT整体解决方案。我们建立了优秀的项目管理方法为开发准则</p>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-file-o"></i> 博客
+                            </a>
+                            <a href="#" class="btn btn-app">
+                                <i class="fa fa-list-alt"></i> 论坛
+                            </a>
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                    <div class="panel box box-primary">
+                        <div class="box-header-copyright">
+                            <h4 class="box-title-copyright">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
+                                    辽ICP备15003906号 版权所有©2008-2016 大连信为软件开发有限公司
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    var tab={}
+    tab.css=function(name){
+        var obj=document.getElementsByTagName("*"),list=[],cssName=new RegExp('\\b'+name+'\\b','g');
+        for(var i=0;i<obj.length;i++){if(obj[i].className.match(cssName)){list.push(obj[i]);}}
+        return list;
+    }
+    tab.obj=function(a,b,c,d){
+        var d=(!d)?0:d;
+        var hs=this.css(a),bs=this.css(b);
+        this.on(hs,bs,c);
+        this.mm(a,b,c,d);
+    }
+    tab.$=function(a,b,css,x){
+        var h=this.css(a),b=this.css(b),z=new RegExp("\\b"+css+"\\b","g");
+        for(var i=0;i<h.length;i++){
+            h[i].className=(i==x)?(h[i].className+" "+css):h[i].className.replace(z,"");
+            b[i].className=(i==x)?(b[i].className+" "+css):b[i].className.replace(z,"");
+        }
+    }
+    tab.on=function(h,b,css){
+        for(var i=0;i<h.length;i++){
+            h[i].onclick=new Function("document.location.hash=this.firstChild.hash;tab.mm('"+h[i].className+"','"+b[i].className+"','"+css+"');return false;")
+        }
+    }
+    tab.mm=function(a,b,c,d){
+        var x=(!document.location.hash || document.location.hash.match(/[0-9]$/ig)==null)?"0":document.location.hash.match(/[0-9]$/ig)-1;
+        this.$(a,b,c,x);
+    }
+    tab.obj("tab_nav","tab_list","up");
+</script>
+
+</body>
+</html>
